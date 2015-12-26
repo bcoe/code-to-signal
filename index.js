@@ -1,5 +1,6 @@
 var lookup = {
   '129': 'SIGHUP',
+  '130': 'SIGINT',
   '131': 'SIGQUIT',
   '132': 'SIGILL',
   '133': 'SIGTRAP',
