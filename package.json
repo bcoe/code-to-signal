@@ -1,0 +1,31 @@
+{
+  "name": "code-to-signal",
+  "version": "1.0.0",
+  "description": "map numeric exit codes to named signals.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "standard",
+    "test": "tap --coverage test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bcoe/code-to-signal.git"
+  },
+  "keywords": [
+    "signal",
+    "shim",
+    "linux",
+    "osx"
+  ],
+  "author": "Ben Coe <ben@npmjs.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcoe/code-to-signal/issues"
+  },
+  "homepage": "https://github.com/bcoe/code-to-signal#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "standard": "^5.4.1",
+    "tap": "^2.3.5"
+  }
+}
