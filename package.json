@@ -1,6 +1,6 @@
 {
   "name": "code-to-signal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "map numeric exit codes to named signals.",
   "main": "index.js",
   "scripts": {
