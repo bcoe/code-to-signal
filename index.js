@@ -30,7 +30,7 @@ var CodeToSignal = function (code) {
 }
 
 CodeToSignal.shimError = function (error) {
-  if (error.code && !error.signal) {
+  if (error && error.code && !error.signal) {
     error.signal = CodeToSignal(error.code)
   }
 

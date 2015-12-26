@@ -1,6 +1,7 @@
 /* global describe, it */
 
 var codeToSignal = require('./')
+var expect = require('chai').expect
 
 require('chai').should()
 require('tap').mochaGlobals()
@@ -31,6 +32,14 @@ describe('code-to-signal', function () {
       error = codeToSignal.shimError(error)
 
       error.signal.should.equal('SIGPWR')
+      return done()
+    })
+
+    it('ignores null error', function (done) {
+      var error = null
+      error = codeToSignal.shimError(error)
+
+      expect(error).to.equal(null)
       return done()
     })
   })
